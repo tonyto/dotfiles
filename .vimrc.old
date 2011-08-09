@@ -1,0 +1,31 @@
+set nocompatible									" gets rid of all the crap that Vim does to be vi compatible
+set modelines=0										" prevents some security exploits
+set encoding=utf-8
+
+syntax enable                     " Turn on syntax highlighting.
+filetype plugin indent on         " Turn on file type detection.
+
+set showcmd                       " Display incomplete commands.
+set showmode                      " Display the mode you're in.
+
+set ignorecase                    " Case-insensitive searching.
+set smartcase                     " But case-sensitive if expression contains a capital letter.
+
+set number                        " Show line numbers.
+set ruler                         " Show cursor position.
+set incsearch											"show incomplete search matches
+
+set title                         " Set the terminal's title
+
+set tabstop=2                    " Global tab width.
+set shiftwidth=2                 " And again, related.
+set autoindent
+
+set laststatus=2                  " Show the status line all the time
+
+set backspace=indent,eol,start
+
+set cursorline
+set visualbell
+
+au FocusLost * :wa								" save on losing focus
